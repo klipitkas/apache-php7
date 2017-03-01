@@ -15,6 +15,7 @@ RUN apk add php7-json
 RUN apk add php7-curl
 RUN apk add php7-zip
 RUN apk add php7-gd
+RUN apk add php7-mbstring
 
 RUN mkdir -p /run/apache2
 EXPOSE 80 443
