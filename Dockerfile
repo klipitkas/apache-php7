@@ -18,6 +18,7 @@ RUN apk add php7-gd
 RUN apk add php7-mbstring
 RUN apk add php7-pdo
 RUN apk add php7-pdo_mysql
+RUN apk add php7-session
 
 RUN mkdir -p /run/apache2
 EXPOSE 80 443
