@@ -6,6 +6,7 @@ RUN echo "ipv6" >> /etc/modules
 
 RUN apk update
 RUN apk upgrade
+RUN apk add bash
 RUN apk add curl
 RUN apk add apache2
 RUN apk add php7-apache2
@@ -19,6 +20,10 @@ RUN apk add php7-mbstring
 RUN apk add php7-pdo
 RUN apk add php7-pdo_mysql
 RUN apk add php7-session
+RUN apk add php7-mysqli
+RUN apk add php7-mcrypt
+RUN apk add php7-tokenizer
+RUN apk add php7-openssl
 RUN apk add php7-mysqli
 
 RUN mkdir -p /run/apache2
