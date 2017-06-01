@@ -25,6 +25,7 @@ RUN apk add php7-mcrypt
 RUN apk add php7-tokenizer
 RUN apk add php7-openssl
 RUN apk add php7-mysqli
+RUN apk add php7-phar
 
 RUN mkdir -p /run/apache2
 EXPOSE 80 443
